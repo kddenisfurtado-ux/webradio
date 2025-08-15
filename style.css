@@ -1,131 +1,100 @@
-:root {
-    --background: #03045E; /* quando colocar -- sereve par dar NOME à cor*/
-    --azulMedio: #0077b6;
-    --azul: #00b4d8;
-    --azulClaro: #90e0ef;
-    --azulBebe: #caf0f8;
-}
-
 * {
-    border: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif ;
-    margin: 0;
-    padding: 0;
-
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
-    background-color: var(--background);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    min-height: 100vh;
+    display: block;
+    position: relative;
 }
 
-ul {
-    list-style: none;
-}
-
-.microfone {
-    border: 4px solid var(--azulClaro);
-    border-radius: 25%;
-    height: 350px;
-    width: 350px;
-}
-
-.section1 {
-    display: flex; /*fica um do lado do outro*/
-    flex-direction: column; /*para deixar um ao lado do outro*/
-    align-items: center;
-    height: fit-content; /*vai usar a altura maxima do elemento pai*/
-    margin: 40px;
-    position: relative; /* vai aplicar a relatividade em conjunto com outros elementos do body*/
-
-}
-
-h1,h2 {
-    color: var(--azulBebe);
-    margin-top: 0;
-
-}
-
-h1 {
-    font-size: 100px;
-    font-weight: 10px;
-}
-
-h2 {
-    font-size: 50px;
-    font-weight: 400;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.linkexterno {
-    padding: 24px 16px;
-}
-
-.linkexterno  {
-    border: 1px solid var(--azulBebe);
-    border-radius: 25px;
-    cursor: pointer var(--azulMedio);
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 50px;
-    text-align: center;
-    width: 400px;
-    transition: 1.5s;
-}
-
-.linkexterno li:not(:last-child) { /*regra para não aplicar mno ultimo filho da lista*/
-    margin-bottom: 10px;
-}
-
-.linkexterno :hover {
-    color: red;
-}
-
-.link2 {
-    color: var(--azulMedio);
-    font-size: 100px;
-    margin: 10px 30px;
-}
-
-.background {
+body::before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 100;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(120, 119, 198, 0.2) 0%, transparent 50%);
 }
 
-#particles-js {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1; /* Para ficar atrás do conteúdo */
+.container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
 }
 
-
-
-.linkexterno a {
-  display: block;
-  width: 100%;
-  text-align: center;
-  padding: 10px;
-  margin: 5px auto;
-  border: 2px solid #00f;
-  color: #00f;
-  background-color: transparent;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s, color 0.3s;
+.header {
+    margin-bottom: 80px;
 }
 
-.linkexterno a:hover {
-  background-color: #00f;
-  color: #fff;
+.logo {
+    margin-bottom: 30px;
+}
+
+.logo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 48px;
+    margin: 20px 0 10px 0;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+    font-size: 20px;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.stations {
+    margin-bottom: 60px;
+}
+
+.station-button {
+    margin: 15px 0;
+}
+
+.station-button a {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    font-size: 18px;
+    font-weight: bold;
+    min-width: 200px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.station-button a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.social-icons {
+    margin-top: 40px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 30px;
+    opacity: 0.8;
+    flex-direction:row
 }
