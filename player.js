@@ -3,14 +3,25 @@ const stations = {
     'pop-rock': {
         name: 'Pop Rock',
         songs: [
-            { title: 'Bohemian Rhapsody', artist: 'Queen', duration: 355 },
-            { title: 'Sweet Child O Mine', artist: 'Guns N Roses', duration: 356 },
-            { title: 'Hotel California', artist: 'Eagles', duration: 391 },
-            { title: 'Stairway to Heaven', artist: 'Led Zeppelin', duration: 482 },
-            { title: 'Imagine', artist: 'John Lennon', duration: 183 }
+           
+            { title: 'Te ver', artist: 'Skank', duration: 431, src: 'musicagaucha/musica23.mp3' },
+            { title: 'Sucesso Gun', artist: 'Gusn And Rose', duration: 210, src: 'musicagaucha/musica26.mp3' },
+            { title: 'Quando o Sol bater na Janela do seu quarto', artist: 'Legião Urbana', duration: 240, src: 'musicagaucha/musica20.mp3' },
+            { title: 'Renato Russo - Scrivimi', artist: 'Renato Russo', duration: 200, src: 'musicagaucha/Renato Russo - Scrivimi.mp3' },
+            { title: 'Astronauta de mármore', artist: 'Renato Russo', duration: 220, src: 'musicagaucha/musica24.mp3' },
+            { title: 'Te ver', artist: 'Skank', duration: 190, src: 'musicagaucha/musica22.mp3' },
+            { title: 'La forza della vita', artist: 'Renato Russo', duration: 240, src: 'musicagaucha/musica34.mp3' },
+            { title: 'Dezesseis', artist: 'Legião Urbana', duration: 180, src: 'musicagaucha/Dezesseis.mp3' },
+            { title: 'Tempo perdido', artist: 'Legião Urbana', duration: 210, src: 'musicagaucha/musica27.mp3' },
+            { title: 'Renato Russo - Strani Amori', artist: 'Renato Russo', duration: 200, src: 'musicagaucha/.mp3' },
+            { title: 'La vita é adesso', artist: 'Renato Russo', duration: 220, src: 'musicagaucha/musica34.mp3' },
+            { title: 'Vamos Fazer Um Filme', artist: 'Legião Urbana ', duration: 180, src: 'musicagaucha/.mp3' },
+            { title: 'Due', artist: 'Legião Urbana', duration: 200, src: 'musicagaucha/.mp3' },
+            { title: 'I venti del cuore', artist: 'Legião Urbana', duration: 220, src: 'musicagaucha/.mp3' },
+            { title: 'Perfeição', artist: 'Legião Urbana ', duration: 240, src: 'musicagaucha/Legião Urbana - Perfeição.mp3' }
         ]
-    },
-    'gauchas': {
+},
+'gauchas': {
         name: 'Gaúchas', // Estação Gaucha//
         songs: [
             { title: 'Cabelão Preto', artist: 'Sorriso Lindo', duration: 244, src:'musicagaucha/musica1.mp3' },
@@ -70,6 +81,7 @@ const stations = {
             {title: 'Coração Valente', artist: 'Davi Lukato', duration: 355, src: 'musicagaucha/musica13.mp3' },
             {title: 'Deixa', artist: 'Maria Marçal', duration: 420, src: 'musicagaucha/musica15.mp3' },
             {title: 'Sobre as Águas', artist: 'Davi Sacer', duration: 912, src: 'musicagaucha/musica16.mp3' },
+            { title: 'Sucesso19', artist: 'Rick Vallen', src: 'musicagaucha/musica19.mp3' },
             {title: 'Deserto', artist: 'Maria Marçal', duration: 426, src: 'musicagaucha/musica18.mp3' },
             {title: 'Coração Valente', artist: 'Nassaildes Junior', duration: 431, src: 'musicagaucha/musica30.mp3' },
             {title: 'Deus de Promessas', artist: 'Davi Sacer', duration: 539, src: 'musicagaucha/musica31.mp3' }
