@@ -334,3 +334,5 @@ function changeStation(stationKey) {
         loadStation();
     }
 }
+
+const station = window.location.hash.split('=')[1];
