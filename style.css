@@ -1,100 +1,278 @@
+:root {
+    --background: #03045E; /* quando colocar -- sereve par dar NOME à cor*/
+    --azulMedio: #0077b6;
+    --azul: #00b4d8;
+    --azulClaro: #90e0ef;
+    --azulBebe: #caf0f8;
+}
+
 * {
+    border: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    margin: 0;
+    padding: 0;
+
 }
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-    min-height: 100vh;
-    display: block;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--background);
 }
 
-body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: 
-        radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 40% 40%, rgba(120, 119, 198, 0.2) 0%, transparent 50%);
+ul {
+    list-style: none;
 }
 
-.container {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 60px 20px;
-    text-align: center;
-    color: white;
+.microfone {
+    border: 4px solid var(--azulClaro);
+    border-radius: 25%;
+    height: 350px;
+    width: 350px;
 }
 
-.header {
-    margin-bottom: 80px;
+.section1 {
+    display: flex; /*fica um do lado do outro*/
+    flex-direction: column; /*para deixar um ao lado do outro*/
+    align-items: center;
+    height: fit-content; /*vai usar a altura maxima do elemento pai*/
+    margin: 40px;
+    position: relative; /* vai aplicar a relatividade em conjunto com outros elementos do body*/
+
 }
 
-.logo {
-    margin-bottom: 30px;
-}
+h1,h2 {
+    color: var(--azulBebe);
+    margin-top: 0;
 
-.logo img {
-    width: 120px;
-    height: 120px;
-    border-radius: 25px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
-    font-size: 48px;
-    margin: 20px 0 10px 0;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 100px;
+    font-weight: 10px;
 }
 
-.subtitle {
-    font-size: 20px;
-    margin: 0;
-    opacity: 0.9;
+h2 {
+    font-size: 50px;
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.stations {
-    margin-bottom: 60px;
+.linkexterno {
+    padding: 24px 16px;
 }
 
-.station-button {
-    margin: 15px 0;
+.linkexterno  {
+    /*border: 1px solid var(--azulBebe);*/
+    border-radius: 25px;
+    cursor: pointer var(--azulMedio);
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 70px;
+    text-align: center;
+    width: 700px;
+    transition: 1.5s;
 }
 
-.station-button a {
-    display: inline-block;
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    padding: 15px 40px;
-    text-decoration: none;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    font-size: 18px;
-    font-weight: bold;
-    min-width: 200px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+.linkexterno li:not(:last-child) { /*regra para não aplicar mno ultimo filho da lista*/
+    margin-bottom: 10px;
 }
 
-.station-button a:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.5);
+.linkexterno :hover {
+    color: red;
 }
 
-.social-icons {
-    margin-top: 40px;
+.link2 {
+    color: var(--azulMedio);
+    font-size: 100px;
+    margin: 10px 30px;
 }
 
-.social-icon {
-    display: inline-block;
-    margin: 0 15px;
-    font-size: 30px;
-    opacity: 0.8;
-    flex-direction:row
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Para ficar atrás do conteúdo */
+}
+
+
+
+.linkexterno a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  margin: 5px auto;
+  border: 2px solid #00f;
+  color: #00f;
+  background-color: transparent;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.linkexterno a:hover {
+  background-color: #00f;
+  color: #fff;
+
+}
+
+/*======================================================DAQUI PRA BAIXO É O CSS ANTIGO===============================================================*/
+
+/* Fundo geral da página */
+
+.menu {
+  padding: 10px 20px;
+  margin: 20px;
+  font-size: 25px;
+  margin-left: 20pxb;
+  
+}
+.menu a{
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 25px;
+  margin-left: 20pxb;
+  text-decoration: dotted;
+  
+}
+
+.gospel {
+  margin: 0px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: hwb(0 100% 0%);
+  opacity: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 100%;
+  background-image: url(/imagem/jesus\ cristo.webp);
+  background-repeat: no-repeat;
+  /* background-position: 600px 20px; */
+}
+
+.principal {
+  margin: 0px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: hwb(0 100% 0%);
+  opacity: 80%;
+ flex-direction: row-reverse;
+ align-items: center;
+ justify-content: center;
+  max-height: 100%;
+ background-image: url(/imagem/microfone\ radio.jpg);
+ background-repeat: no-repeat;
+ background-position: 600px 20px;
+
+}
+
+/* Quadro principal com fundo roxo */
+.container {
+  background-color: hwb(273 0% 1%); /* roxo */
+  margin-top: 10px;
+  padding: 50px;
+  border-radius: 10px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  /* max-width: 400px; */
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.4);
+  flex-direction: column;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+#titulo {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #ffffcc;
+}
+
+audio { /*controlador do tocador*/
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+.botoes {  /*controlador do tocador*/
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.botoes button { /*formação dos botões*/
+  background-color: #00818aa8;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.botoes button:hover { /*ao clicar no botaão com cursor qual a cor que assume*/
+  background-color: #ff0000c4;
+}
+
+/* Letreiro inferior */
+
+.letreiro {
+  /*background-color: #1e008a; /* roxo */
+  width: 100%;
+  padding: 40px;
+  margin-top: 30px;
+/*border-radius: 20px;*/
+  text-align: center;
+  color: white;
+  max-width: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+}
+#mensagem {
+  color: white;
+  font-size: 50px;
+  white-space: nowrap;
+  animation: deslizarMensagem 60s linear infinite;
+}
+
+@keyframes deslizarMensagem {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.player-box {
+ /* position: fixed; */
+  top: 10px; /* ajuste conforme desejar */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: hwb(108 18% 26%);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.letreiro p {
+  margin: 0; /* ou ajuste conforme desejado */
+}
+
