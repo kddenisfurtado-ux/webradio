@@ -6,6 +6,15 @@
     --azulBebe: #caf0f8;
 }
 
+.secao-banner video {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
 * {
     border: 0;
     box-sizing: border-box;
@@ -275,4 +284,5 @@ audio { /*controlador do tocador*/
 .letreiro p {
   margin: 0; /* ou ajuste conforme desejado */
 }
+
 
