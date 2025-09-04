@@ -22,7 +22,7 @@ body {
     background: hsl(263, 100%, 50%);
     padding: 30px 20px;
     box-sizing: border-box;
-    background-image: image-set(url(/imagem/microfone.jpg));
+    background-image: url('/imagem/microfone.jpg'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -186,3 +186,4 @@ body {
 #playlist-items li.active {
     background: rgba(255, 255, 255, 0.3);
 }
+
