@@ -4,20 +4,17 @@ const stations = {
         name: 'Pop Rock',
         songs: [
            
-            { title: 'Te ver', artist: 'Skank', duration: 431, src: 'musicagaucha/musica23.mp3' },
+            { title: 'Te ver', artist: 'Nirvana', duration: 431, src: 'musicagaucha/musica23.mp3' },
             { title: 'Sucesso Gun', artist: 'Gusn And Rose', duration: 210, src: 'musicagaucha/musica26.mp3' },
             { title: 'Quando o Sol bater na Janela do seu quarto', artist: 'Legião Urbana', duration: 240, src: 'musicagaucha/musica20.mp3' },
             { title: 'Renato Russo - Scrivimi', artist: 'Renato Russo', duration: 200, src: 'musicagaucha/Renato Russo - Scrivimi.mp3' },
-            { title: 'Astronauta de mármore', artist: 'Renato Russo', duration: 220, src: 'musicagaucha/musica24.mp3' },
+            { title: 'Astronauta de mármore', artist: 'Nenhum de Nós', duration: 220, src: 'musicagaucha/musica24.mp3' },
             { title: 'Te ver', artist: 'Skank', duration: 190, src: 'musicagaucha/musica22.mp3' },
-            { title: 'La forza della vita', artist: 'Renato Russo', duration: 240, src: 'musicagaucha/musica34.mp3' },
+            { title: 'La forza della vita', artist: 'Renato Russo', duration: 240, src: 'musicagaucha/Renato Russo - La forza della vita.mp3' },
             { title: 'Dezesseis', artist: 'Legião Urbana', duration: 180, src: 'musicagaucha/Dezesseis.mp3' },
             { title: 'Tempo perdido', artist: 'Legião Urbana', duration: 210, src: 'musicagaucha/musica27.mp3' },
             { title: 'Renato Russo - Strani Amori', artist: 'Renato Russo', duration: 200, src: 'musicagaucha/.mp3' },
-            { title: 'La vita é adesso', artist: 'Renato Russo', duration: 220, src: 'musicagaucha/musica34.mp3' },
-            { title: 'Vamos Fazer Um Filme', artist: 'Legião Urbana ', duration: 180, src: 'musicagaucha/.mp3' },
-            { title: 'Due', artist: 'Legião Urbana', duration: 200, src: 'musicagaucha/.mp3' },
-            { title: 'I venti del cuore', artist: 'Legião Urbana', duration: 220, src: 'musicagaucha/.mp3' },
+            { title: 'Vamos Fazer Um Filme', artist: 'Legião Urbana ', duration: 180, src: 'musicagaucha/Vamos Fazer Um Filme.mp3' },
             { title: 'Perfeição', artist: 'Legião Urbana ', duration: 240, src: 'musicagaucha/Legião Urbana - Perfeição.mp3' }
         ]
 },
@@ -336,3 +333,4 @@ function changeStation(stationKey) {
 }
 
 const station = window.location.hash.split('=')[1];
+
