@@ -16,12 +16,16 @@ body {
     height: 100vh; /* ocupa toda a altura da tela */
 }
 
-.stations-menu {
+.stations-menu { /*é o menu lateral das estações*/
     width: 35%; /* ajuste conforme desejar */
     min-width: 300px;
-    background: #1a2a4a;
+    background: hsl(263, 100%, 50%);
     padding: 30px 20px;
     box-sizing: border-box;
+    background-image: image-set(url(/imagem/microfone.jpg));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .player-section {
@@ -60,7 +64,9 @@ body {
 }
 
 .stations-list a:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: #0004ff85;
+    border-color: aqua;
+    color: bisque;
 }
 
 .back-button a {
